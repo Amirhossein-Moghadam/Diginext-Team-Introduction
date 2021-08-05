@@ -1,0 +1,281 @@
+/* ==========================================================================
+   IMPORT GOOGLE FONTS
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+/* ==========================================================================
+      GENERAL
+      ========================================================================== */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #a0a6ad;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 14px;
+  color: #5e629c;
+  line-height: 26px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a:hover, a:focus {
+  color: #000;
+}
+
+a {
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #151948;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #fff;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-defult {
+  background: #3c9cfd !important;
+}
+
+/* ==========================================================================
+      Navbar Style
+      ========================================================================== */
+
+.navbar {
+  background: linear-gradient( 95deg, #5533ff 40%, #25ddf5 100%) !important;
+  z-index: 9999;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-bg {
+  background: #5533ff;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-bg .menu-button {
+  top: 0;
+}
+
+.menu-bg .menu-button:hover {
+  cursor: pointer;
+  color: #3c9cfd;
+}
+
+.menu-bg .logo-menu a {
+  color: #3c9cfd;
+}
+
+.menu-bg .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.menu-bg .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.menu-bg .navbar-nav .active {
+  color: #ffffff !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 0px;
+  margin-left: 26px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-weight: 500;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar-expand-md .navbar-nav .active::before, .navbar-expand-md .navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:focus, .navbar-expand-md .navbar-nav .nav-link:hover, .navbar-expand-md .navbar-nav .nav-link:hover:before {
+  color: #ffffff;
+}
+
+.navbar-expand-md .navbar-nav .active>.nav-link, .navbar-expand-md .navbar-nav .nav-link.active, .navbar-expand-md .navbar-nav .nav-link.active:before, .navbar-expand-md .navbar-nav .nav-link.open, .navbar-expand-md .navbar-nav .open>.nav-link {
+  color: #ffffff;
+}
+
+.navbar-expand-md .navbar-toggler {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.navbar-expand-md .navbar-toggler i {
+  color: #fff !important;
+}
+
+.navbar-expand-md .navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 35px !important;
+  font-weight: 500;
+  margin-top: 5px;
+  user-select: none;
+}
+
+.navbar-brand:hover {
+  color: white;
+  font-size: 35px !important;
+  font-weight: 500;
+  transform: scale(1.07);
+}
+
+#navbarCollapse {
+  padding-top: 10px;
+}
+
+/* ==========================================================================
+      Hero Area
+   ========================================================================== */
+
+.hero-area {
+  position: relative;
+}
+
+.hero-area .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #5533ff;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  -webkit-transform: skewY(-12deg);
+  transform: skewY(-12deg);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  z-index: -12;
+}
+
+.hero-area .overlay :nth-child(1) {
+  width: 33.33333%;
+  width: calc(100% / 2);
+  top: 0;
+  left: 16.66666%;
+  left: calc(calc(100% / 3) / 2);
+  right: auto;
+  background: #5533ff;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  height: 200px;
+}
+
+.hero-area .overlay :nth-child(2) {
+  width: 33.33333%;
+  width: calc(100% /3);
+  bottom: 0;
+  background: #5533ff;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  position: absolute;
+  height: 155px;
+  left: 3%;
+}
+
+.hero-area .contents {
+  padding: 220px 0;
+}
+
+.hero-area .contents h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.hero-area .contents p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  user-select: none;
+}
+
+.hero-area .intro-img {
+  margin: auto;
+  margin-top: -20px;
+  padding: 100px 0 0px;
+}
+
+.hero-area .intro-img img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 100%;
+  pointer-events: none;
+}
